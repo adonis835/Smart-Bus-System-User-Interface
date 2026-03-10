@@ -1,7 +1,7 @@
-# Smart Bus System
+# Smart Bus System - User Interface Project
  ![Main Screen Screenshot](Main.png)
- A C# Windows Forms application that simulates a smart bus environment with integrated services for passengers, drivers, and staff.
- The system provides features such as passenger registration, employee access, food ordering, landmark navigation, cleaning management, and a digital help manual.
+  A C# Windows Forms application that simulates a smart bus environment with integrated services for passengers, drivers, and staff.
+  The system provides features such as passenger registration, employee access, food ordering, landmark navigation, cleaning management, and a digital help manual.
 ## About The Project
 The Smart Bus System is designed to demonstrate how different digital services could be integrated into a modern public transportation system.
 The application simulates multiple subsystems that would normally exist in a smart transportation environment, including:
