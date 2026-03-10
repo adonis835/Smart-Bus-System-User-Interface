@@ -32,5 +32,23 @@ Typical workflow:
 2. Sign in as an Employee or a Passenger
 3. Interact with the GUI features (cleaning, navigation, food ordering, etc.)
 4. Access the help manual if needed
+## Features
+The application includes several modules:
+### Passenger Registration
+ - Allows passengers to register and interact with the system.
+### Employee Login
+ - Provides access for authorized personnel to internal system features.
+### Food Ordering System
+ - Passengers can simulate ordering food while using the bus system.
+### Landmark Navigation
+ - Displays landmarks and navigation-related information.
+### Driving Assistant
+ - Provides a Driving Mode to help the driver with the bus speed and the bus stops .
+### Cleaning System
+ - Includes a system for bus cleaning and maintenance tracking
+### Control Panel
+ - Simulates operational controls and system status.
+### Help Manual
+ - An embedded PDF help manual is available inside the application for user guidance.
 ## License 
 Distributed under the MIT License. See LICENSE.txt for more information.
