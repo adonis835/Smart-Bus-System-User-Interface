@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CF2F534-FDF5-4A23-AEF2-203E6DE5588A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Smart_Bus</RootNamespace>
+    <AssemblyName>Smart_Bus</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clean.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clean.Designer.cs">
+      <DependentUpon>Clean.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CleaningProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CleaningProgress.Designer.cs">
+      <DependentUpon>CleaningProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coffee_house.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coffee_house.Designer.cs">
+      <DependentUpon>Coffee_house.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coffee_Place.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coffee_Place.Designer.cs">
+      <DependentUpon>Coffee_Place.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coffee_Shop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coffee_Shop.Designer.cs">
+      <DependentUpon>Coffee_Shop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlPanel.Designer.cs">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriversView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriversView.Designer.cs">
+      <DependentUpon>DriversView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driving.Designer.cs">
+      <DependentUpon>Driving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemForm.Designer.cs">
+      <DependentUpon>ItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Landmarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Landmarks.Designer.cs">
+      <DependentUpon>Landmarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyOrder.Designer.cs">
+      <DependentUpon>MyOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clean.resx">
+      <DependentUpon>Clean.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CleaningProgress.resx">
+      <DependentUpon>CleaningProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coffee_house.resx">
+      <DependentUpon>Coffee_house.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coffee_Place.resx">
+      <DependentUpon>Coffee_Place.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coffee_Shop.resx">
+      <DependentUpon>Coffee_Shop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlPanel.resx">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriversView.resx">
+      <DependentUpon>DriversView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driving.resx">
+      <DependentUpon>Driving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemForm.resx">
+      <DependentUpon>ItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Landmarks.resx">
+      <DependentUpon>Landmarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyOrder.resx">
+      <DependentUpon>MyOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 17, 2025, 04_58_13 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-logo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee house.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee shop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee place.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sydney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sydney_Harbour_Bridge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sydney_opera_house.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sydney-observatory.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sydney-circular-quay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botanic gardens.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tower eye.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queen victoria building.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hyde park.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darling harbour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\australian museum.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buspic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speedometer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buspanel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
